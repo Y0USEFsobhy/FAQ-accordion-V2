@@ -1,5 +1,6 @@
 body{
     font-family: "Work Sans", sans-serif;
+    background-color:hsl(275, 100%, 97%);
 }
 .cover-photo .desktop{
     max-width: 100%;
