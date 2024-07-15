@@ -1,0 +1,108 @@
+body{
+    font-family: "Work Sans", sans-serif;
+}
+.cover-photo .desktop{
+    max-width: 100%;
+}
+.cover-photo .mobile{
+    display: none;
+}
+.card{
+    background-color: white;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 17px;
+    box-shadow: 10px 10px 30px rgba(38, 37, 37, 0.3), -10px -10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    transition: 0.10s;
+    border: none;
+}
+.card .title h1{
+    font-weight: 700;
+    margin: 10px;
+}
+.not-active {
+    opacity: 0;
+    transform: scale(0.5);
+}
+.active {
+    opacity: 1;
+    transform: scale(1);
+}
+.icons {
+    position: relative;
+    min-width: 32px;
+    height: 35px;
+}
+.icon-minus,
+.icon-plus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.question{
+    font-size: 17px;
+}
+.answer{
+    line-height: 1.2;
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;
+}
+.open{
+    height: 130px;
+}
+.close{
+    height:50px;
+}
+
+.Q{
+    transition: 0.6s;
+    overflow: hidden;
+}
+.line{
+    padding-block: 10px;
+}
+
+
+.question{
+    font-weight: 700;
+    color:hsl(292, 42%, 14%);
+    transition: 0.4s;
+    cursor: pointer;
+}
+.question:hover{
+    color: #ad28eb;
+}
+@media only screen and (max-width:767px) {
+
+    .cover-photo .desktop{
+        display: none;
+    }
+    .cover-photo .mobile{
+        display: block;
+        width: 100%;
+    }
+    .card{
+        border-radius: 12px;
+
+    }
+    .cover-photo .card .title img {
+        width: 2rem;
+    }
+    .cover-photo .card h1{
+        font-size: 2.2rem;
+    }
+
+    
+}
+
+
+
